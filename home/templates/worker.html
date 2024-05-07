@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="px-6x py-6">
+    <table class="container">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+       {%for i in list%}
+        <tr>
+          <td>{{i.id}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+{% endblock %}
